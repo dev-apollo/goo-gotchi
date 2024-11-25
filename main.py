@@ -29,6 +29,7 @@ if __name__ == "__main__":
     root.destroy()
 
     gui = game_interface.GameInterface(userPet)
+    gui.update_image()
     # Protocolo para quando uma janela do Windows é fechada
     gui.root.protocol("WM_DELETE_WINDOW", gui.save_exit)
     gui.root.mainloop()

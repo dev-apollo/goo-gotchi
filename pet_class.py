@@ -13,7 +13,7 @@ class Pet:
 
     # Método para atualizar os status enquanto o jogo roda
     def updateInGameStatus(self, time_passed):
-        if int(time_passed) >= 5 and int(time_passed) % 5 == 0:
+        if int(time_passed) >= 1 and int(time_passed) % 1 == 0:
             self.happiness = max(self.happiness - 1, 0)
         if int(time_passed) >= 10 and int(time_passed) % 10 == 0:
             self.food = max(self.food - 1, 0)
